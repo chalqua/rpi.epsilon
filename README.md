@@ -24,3 +24,16 @@ We welcome contributions. For smaller changes just open a pull request straight 
 ## License
 
 NumWorks Epsilon is released under a [CC BY-NC-SA License](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode). NumWorks is a registered trademark.
+
+
+## Arthur's Adendum
+
+Do not forget to copy epsilon.elf after building.
+The full receipe would be:
+
+```bash
+make MODEL=n0100 clean
+make MODEL=n0100
+cp build/device/epsilon.elf .
+make MODEL=n0100 epsilon_flash
+```
